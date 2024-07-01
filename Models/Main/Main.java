@@ -1,6 +1,7 @@
 package Models.Main;
 import Models.Music;
 import Models.PodCast;
+import Models.MyFavorite;
 
 public class Main {
     public static void main(String[] args){
@@ -28,6 +29,11 @@ public class Main {
         for(int i = 0; i < 1000; i++){
             myPodCast.likes();
         }
+
+        MyFavorite favorites = new MyFavorite();
+        favorites.includes(myPodCast);
+        favorites.includes(myMusic);
+
     }
 
 }
