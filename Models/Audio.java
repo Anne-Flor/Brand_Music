@@ -5,7 +5,7 @@ public class Audio{
     private String title;
     private int totalReproduction; 
     private int totalLikes; 
-    private double classification;
+    private int classification;
     
     public double getDuration(){
         return duration; 
@@ -27,7 +27,7 @@ public class Audio{
         return totalLikes; 
     }
 
-    public double getClassification(){
+    public int getClassification(){
         return classification; 
     }
 
